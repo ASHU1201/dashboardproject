@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Multiple view _Largest Population in the USA</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <div id="dashboard-title"></div>
+    <script src="https://unpkg.com/vega@5.4.0/build/vega.min.js"></script>
+    <script src="https://unpkg.com/vega-lite@4.0.0-beta.1/build/vega-lite.min.js"></script>
+    <script src="https://unpkg.com/vega-lite-api@0.1.0/build/vega-lite-api.min.js"></script>
+    <script src="https://unpkg.com/vega-tooltip@0.19.1/build/vega-tooltip.min.js"></script>
+    <script src="https://unpkg.com/d3@5.11.0/dist/d3.min.js"></script>    
+    <style>
+      body {
+
+       const svg = d3.select("#dashboard-title")
+              .append("svg")
+              .attr("width", 800)
+              .attr("height", 50);
+
+              svg.append("text")
+   .attr("x", 400)  // Adjust the x-position based on your requirements
+   .attr("y", 30)   // Adjust the y-position based on your requirements
+   .attr("text-anchor", "middle") // Center the text horizontally
+   .attr("font-size", "24px")     // Set the font size
+   .text("Dashboard Title");
+
+      }
+      #vg-tooltip-element {
+        font-size: 16px;
+        color: #383e38;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="bundle.js"></script>
+  </body>
+</html>
